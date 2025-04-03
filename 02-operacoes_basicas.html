@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 02</title>
+</head>
+<body>
+
+    <script>
+
+        const operacoesBasicas = function() {
+
+            const operacao = prompt("Escolha uma operação para ser realizada: 1- Somar 2- Subtrair 3- Dividir 4- Multiplicar: ")
+            const n1 = prompt("Digite um número: ")
+            const n2 = prompt("Digite outro número: ")
+            
+
+            switch(operacao) {
+                case "1":
+                return (`a soma dá ${n1 + n2}!`)
+                    break;
+
+                case "2":
+                    return (`a subtração dá ${n1 - n2}!`)
+                    break;
+
+                case "3":
+                    alert (`a divisão dá ${n1 / n2}!`)
+                    break;
+
+                case "4":
+                    return (`a multiplicação dá ${n1 * n2}!`)
+                    break;
+                
+                default:
+                    return ("opção inválida")    
+            }
+
+        }
+
+        alert(operacoesBasicas())
+
+    </script>
+    
+</body>
+</html>
