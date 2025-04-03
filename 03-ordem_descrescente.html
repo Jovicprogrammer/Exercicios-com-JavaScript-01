@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 03</title>
+</head>
+<body>
+
+    <script>
+
+        const ordemDescrescente = function() {
+
+            numeros = []
+
+            const n1 = numeros.push(prompt("Digite seu primeiro número: "))
+            const n2 = numeros.push(prompt("Digite seu segundo número: "))
+            const n3 = numeros.push(prompt("Digite seu terceiro número: "))
+
+            numeros.sort(function (a, b) {return a - b;})
+            return `a ordem descrescente ficaria: ${numeros.reverse()}`
+
+        }
+
+        alert(ordemDescrescente())
+
+    </script>
+    
+</body>
+</html>
