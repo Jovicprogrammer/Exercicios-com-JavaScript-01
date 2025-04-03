@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 05</title>
+</head>
+<body>
+
+    <script>
+
+        const calculaMedias = () => {
+
+            const bimestre01 = prompt("Digite a primeira nota: ")
+            const bimestre02 = prompt("Digite a segunda nota: ")
+            const bimestre03 = prompt("Digite a terceira nota: ")
+            const bimestre04 = prompt("Digite a quarta nota: ")
+
+            const nota01 = parseInt(bimestre01) 
+            const nota02 = parseInt(bimestre02) 
+            const nota03 = parseInt(bimestre03) 
+            const nota04 = parseInt(bimestre04) 
+
+            media = (nota01 + nota02 + nota03 + nota04) / 4
+
+            if (media >= 7) {
+                return (`${media.toFixed(2)} Aluno aprovado! :D`);
+            }
+            else if (media <7 && media >= 5) {
+                return (`${media.toFixed(2)} Aluno de Recuperação :P`);
+            }
+            else if (media <5) {
+                return (`${media.toFixed(2)} Aluno Reprovado :(`);
+            }
+    
+            }
+
+            alert(calculaMedias())
+
+    </script>
+    
+</body>
+</html>
