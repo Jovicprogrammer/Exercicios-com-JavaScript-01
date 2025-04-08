@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 06</title>
+</head>
+<body>
+
+    <script>
+
+        const operaFrutas = function() {
+
+            frutas = ["tomate", "abacate", "morango", "melancia"]
+
+            const operacao = prompt("Defina a operação: ")
+
+            switch(operacao) {
+                case "1":
+                    frutas.push(prompt(`${frutas}: Adicione uma fruta: `));
+                    return ("as frutas são: " + frutas);
+                    break
+                    
+                case "2": 
+                    frutas.pop()
+                    return ("Assim ficou a lista: " + frutas)
+                    break
+                
+                case "3": 
+                    quantidade = parseInt(prompt(`Digite quantas primeiras frutas você deseja ver: `));
+                    primeiras = frutas.slice(0, quantidade);
+                    return `Essas são as ${quantidade} primeiras frutas: ${primeiras}`
+                    break
+                
+                case "4": 
+                    quantidade = parseInt(prompt(`Digite quantas últimas frutas você deseja ver: `));
+                    partida = (4 - quantidade)
+                    ultimas = frutas.slice(partida, 4);
+                    return `Essas são as ${quantidade} últimas frutas: ${ultimas}`
+                    break 
+                
+                case "5":
+                    novaFruta = prompt(`Digite a fruta a ser adicionada: `)
+                    posicao = parseInt(prompt(`Digite a posição da nova fruta na lista: `))
+
+                    posicaoReal = (posicao - 1)
+
+                    frutas.splice(posicaoReal, 0, novaFruta)
+                    return frutas
+                    break
+
+                    default:
+                        return "Opção Inválida!!"
+            }   
+        }
+
+        alert(operaFrutas())
+
+    </script>
+    
+</body>
+</html>

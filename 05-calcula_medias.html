@@ -16,26 +16,84 @@
             const bimestre03 = prompt("Digite a terceira nota: ")
             const bimestre04 = prompt("Digite a quarta nota: ")
 
-            const nota01 = parseInt(bimestre01) 
-            const nota02 = parseInt(bimestre02) 
-            const nota03 = parseInt(bimestre03) 
-            const nota04 = parseInt(bimestre04) 
+            const nota01 = parseFloat(bimestre01) 
+            const nota02 = parseFloat(bimestre02) 
+            const nota03 = parseFloat(bimestre03) 
+            const nota04 = parseFloat(bimestre04) 
 
             media = (nota01 + nota02 + nota03 + nota04) / 4
 
             if (media >= 7) {
-                return (`${media.toFixed(2)} Aluno aprovado! :D`);
+                return (`A média é ${media}: Aluno aprovado! :D`);
             }
             else if (media <7 && media >= 5) {
-                return (`${media.toFixed(2)} Aluno de Recuperação :P`);
+                return (`A média é ${media}: Aluno de Recuperação :P`);
             }
-            else if (media <5) {
-                return (`${media.toFixed(2)} Aluno Reprovado :(`);
+            else {
+                return (`A média é ${media}: Aluno Reprovado :(`);
             }
     
             }
 
-            alert(calculaMedias())
+            // alert(calculaMedias())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            // - versão com arrays ↓ - //
+
+            const notas = [10, 6.5, 8, 7.5]
+
+            const media = (notas[0] + notas[1] + notas[2] + notas[3]) / notas.length 
+
+            // alert (media)
+
+
+            // adicionar e remover elementos da lista
+
+            const notas1 = [10, 6.5, 8, 7.5]
+
+            // adiciona um elemento no final da lista
+            // notas1.push(10)
+
+            //remove um elemento no final da lista
+            // notas1.pop()
+
+            n1 = (parseFloat(prompt("Digite o primeiro numero: ")))
+            n2 = (parseFloat(prompt("Digite o segundo numero: ")))
+            n3 = (parseFloat(prompt("Digite o terceiro numero: ")))
+            n4 = (parseFloat(prompt("Digite o quarto numero: ")))
+
+            const numeros = []
+            numeros.push(n1, n2, n3, n4)
+
 
     </script>
     
