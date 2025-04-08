@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 07</title>
+</head>
+<body>
+
+    <script>
+
+        const listasNotas = () => {
+
+        const nota1 = prompt(`Digite a primeira nota: `)
+        const nota2 = prompt(`Digite a segunda nota: `)
+
+        const notas1 = []
+        notas1.push(nota1, nota2)
+
+        const nota3 = prompt(`Digite a terceira nota: `)
+        const nota4 = prompt(`Digite a quarta nota: `)
+
+        const notas2 = []
+        notas2.push(nota3, nota4)
+        const notas3 = notas1.concat(notas2)
+
+        return `A primeira lista é: ${notas1}
+                A segunda lista é: ${notas2}
+                A terceira lista é: ${notas3}`
+        }
+
+        alert(listasNotas())
+
+
+    </script>
+    
+</body>
+</html>
