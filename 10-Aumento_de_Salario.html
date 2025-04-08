@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 10</title>
+</head>
+<body>
+
+    <script>
+
+        const aumentaSalario = () => {
+
+            const salario = parseFloat(prompt("Digite o valor do salário: "))
+
+            if (salario <= 1630) {
+                const percentual = (15 * salario) / 100
+
+                return `Com o aumento, o salário ficou R$${percentual + salario}`
+            }
+
+            else if (salario > 1630 && salario <= 3000) {
+                const percentual = (10 * salario) / 100
+
+                return `Com o aumento, o salário ficou R$${percentual + salario}`
+            }
+
+            else if (salario >= 3000 && salario <= 5000) {
+                const percentual = (5 * salario) / 100
+
+                return `Com o aumento, o salário ficou R$${percentual + salario}`
+            }
+
+            else if (salario > 5000) {
+                return `Com o aumento, o salário ficou R$${100 + salario}`
+            }
+
+        }
+
+        alert(aumentaSalario())
+
+    </script>
+    
+</body>
+</html>
